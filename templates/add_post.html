@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Добавить пост</h1>
+
+<form method="post">
+    {{ form.hidden_tag() }}
+
+    {{ form.title(class="form-control mb-2") }}
+    {{ form.content(class="form-control mb-2") }}
+    {{ form.author(class="form-control mb-2") }}
+
+    <button class="btn btn-primary">Добавить</button>
+</form>
+
+{% endblock %}
